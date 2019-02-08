@@ -622,7 +622,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var ServiceService = /** @class */ (function () {
     function ServiceService(http) {
         this.http = http;
-        this.path = "/app";
+        this.path = "";
     }
     ServiceService.prototype.login = function (email, password) {
         return this.http.get(this.path + '/login?email=' + email + "&password=" + password);
